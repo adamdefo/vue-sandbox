@@ -1,4 +1,5 @@
 <template>
+  <app-navigation></app-navigation>
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
@@ -21,7 +22,12 @@
 </template>
 
 <script>
+import Navigation from './navigation/Navigation.vue'
+
 export default {
+  components: {
+    'app-navigation': Navigation
+  },
   name: 'hello',
   data () {
     return {

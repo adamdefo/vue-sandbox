@@ -1,11 +1,5 @@
 <template>
   <div id="app">
-    <nav class="nav nav-main">
-      <ul class="nav__list">
-        <li class="nav__item"><router-link to="/" class="nav__link">Go to Main</router-link></li>
-        <li class="nav__item"><router-link to="/films" class="nav__link">Go to Films</router-link></li>
-      </ul>
-    </nav>
     <router-view></router-view>
   </div>
 </template>
@@ -34,25 +28,5 @@ a {
 a:hover {
   border-color: rgba(249,89,58,.3);
   color: #f9593a;
-}
-
-.nav {
-  display: block;
-  padding: 0;
-  margin: 0;
-}
-
-.nav__list {
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-
-.nav__item {
-  position: relative;
-  display: inline-block;
-  padding: .3em .5em;
-  margin: 0 .5em .3em 0;
-  white-space: nowrap;
 }
 </style>
